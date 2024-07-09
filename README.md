@@ -28,9 +28,9 @@ Ensure you have FFmpeg installed on your system. FFmpeg is a multimedia framewor
 
 - **macOS:**
 
-  \`\`\`sh
-  brew install ffmpeg
-  \`\`\`
+```bash
+brew install ffmpeg
+```
 
 - **Windows:**
 
@@ -38,35 +38,35 @@ Ensure you have FFmpeg installed on your system. FFmpeg is a multimedia framewor
 
 - **Ubuntu/Debian:**
 
-  \`\`\`sh
+```sh
   sudo apt update
   sudo apt install ffmpeg
-  \`\`\`
+```
 
 ### Setting Up
 
 Clone the repository and install the package along with its dependencies:
 
-\`\`\`sh
+```sh
 git clone https://github.com/yourusername/whisper_subtitles.git
 cd whisper_subtitles
 pip install -r requirements.txt
 pip install .
-\`\`\`
+```
 
 ## Usage
 
 Generate subtitles for a video by running the following command:
 
-\`\`\`sh
+```sh
 whisper_subtitles path/to/video.mp4 --model large-v2 --output_dir path/to/output
-\`\`\`
+```
 
 ### Command Line Options
 
-- \`video\`: Path to the video file to transcribe.
-- \`--model\`: Whisper model to use for transcription (default is \`large-v2\`).
-- \`--output_dir\`: Directory to save the output video with subtitles (default is the current directory).
+- `video`: Path to the video file to transcribe.
+- `--model`: Whisper model to use for transcription (default is \`large-v2\`).
+- `--output_dir`: Directory to save the output video with subtitles (default is the current directory).
 
 ## Examples
 
@@ -76,25 +76,25 @@ Here are a few examples to get you started:
 
 Generate subtitles using the default model and save the output in the current directory:
 
-\`\`\`sh
+```sh
 whisper_subtitles path/to/video.mp4
-\`\`\`
+```
 
 ### Specify Output Directory
 
 Save the subtitled video in a specific directory:
 
-\`\`\`sh
+```sh
 whisper_subtitles path/to/video.mp4 --output_dir ./subtitled_videos
-\`\`\`
+```
 
 ### Use a Different Whisper Model
 
 Use a smaller Whisper model for faster processing:
 
-\`\`\`sh
+```sh
 whisper_subtitles path/to/video.mp4 --model base
-\`\`\`
+```
 
 
 ## License
